@@ -9,6 +9,7 @@ logs/
 data/
 models/
 reports/
+.env
 
 # Virtual environments
 .venv

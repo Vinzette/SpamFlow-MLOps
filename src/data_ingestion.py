@@ -70,7 +70,7 @@ def save_data(train_data: pd.DataFrame, test_data: pd.DataFrame, data_path: str)
 def main():
     try:
         test_size = 0.2
-        data_path = 'https://raw.githubusercontent.com/Vinzette/Datasets/refs/heads/main/spam.csv?token=GHSAT0AAAAAADU7WDA773YHRSOABQLE2ZY22NB5RRA'
+        data_path = 'https://raw.githubusercontent.com/vikashishere/Datasets/refs/heads/main/spam.csv'
         df = load_data(data_url=data_path)
         final_df = preprocess_data(df)
         train_data, test_data = train_test_split(final_df, test_size=test_size, random_state=2)
